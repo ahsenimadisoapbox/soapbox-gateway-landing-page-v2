@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Switch } from '@/components/ui/switch';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Switch } from '../components/ui/switch';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { Shield, Key, Lock, Users, History, AlertTriangle, CheckCircle2, Loader2 } from 'lucide-react';
-import { toast } from '@/hooks/use-toast';
+import { toast } from '../hooks/use-toast';
 
 export function Security() {
   const [isScanning, setIsScanning] = useState(false);
@@ -39,7 +38,7 @@ export function Security() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div>
           <h1 className="text-2xl font-bold text-foreground flex items-center gap-2"><Shield className="h-6 w-6" />Security Settings</h1>
@@ -143,6 +142,6 @@ export function Security() {
           </Card>
         </div>
       </div>
-    </MainLayout>
+    </>
   );
 }

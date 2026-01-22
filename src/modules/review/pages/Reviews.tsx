@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Input } from '../components/ui/input';
 import {
   Dialog,
   DialogContent,
@@ -12,16 +11,16 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from '../components/ui/dialog';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+} from '../components/ui/select';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -29,8 +28,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
-import { Progress } from '@/components/ui/progress';
+} from '../components/ui/table';
+import { Progress } from '../components/ui/progress';
 import {
   ClipboardCheck,
   Plus,
@@ -42,8 +41,8 @@ import {
   Play,
   Lock,
 } from 'lucide-react';
-import { mockReviews, Review } from '@/data/mockData';
-import { cn } from '@/lib/utils';
+import { mockReviews, Review } from '../data/mockData';
+import { cn } from '../lib/utils';
 import { useNavigate } from 'react-router-dom';
 
 export function Reviews() {
@@ -141,7 +140,7 @@ export function Reviews() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -457,6 +456,6 @@ export function Reviews() {
           </DialogContent>
         </Dialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

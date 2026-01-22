@@ -36,37 +36,37 @@ const navSections: NavSection[] = [
     title: 'Overview',
     items: [
       { label: 'Dashboard', path: '/review', icon: LayoutDashboard },
-      { label: 'Review Calendar', path: '/calendar', icon: CalendarDays },
+      { label: 'Review Calendar', path: '/review/calendar', icon: CalendarDays },
     ],
   },
   {
     title: 'Review Execution',
     items: [
-      { label: 'Reviews', path: '/reviews', icon: ClipboardCheck },
-      { label: 'ISO Inputs', path: '/iso-inputs', icon: FileText },
-      { label: 'Decisions', path: '/decisions', icon: ListTodo },
+      { label: 'Reviews', path: '/review/reviews', icon: ClipboardCheck },
+      { label: 'ISO Inputs', path: '/review/iso-inputs', icon: FileText },
+      { label: 'Decisions', path: '/review/decisions', icon: ListTodo },
     ],
   },
   {
     title: 'Actions & CAPA',
     items: [
       { label: 'Actions', path: '/review/actions', icon: ListTodo },
-      { label: 'CAPA', path: '/capa', icon: AlertTriangle },
+      { label: 'CAPA', path: '/review/capa', icon: AlertTriangle },
     ],
   },
   {
     title: 'Monitoring',
     items: [
-      { label: 'Attendance', path: '/attendance', icon: Users },
-      { label: 'Reports & Evidence', path: '/reports', icon: BarChart3 },
+      { label: 'Attendance', path: '/review/attendance', icon: Users },
+      { label: 'Reports & Evidence', path: '/review/reports', icon: BarChart3 },
     ],
   },
   {
     title: 'System',
     items: [
-      { label: 'Settings & Administration', path: '/settings', icon: Settings },
-      { label: 'Security', path: '/security', icon: Shield },
-      { label: 'Help & Training', path: '/help', icon: HelpCircle },
+      { label: 'Settings & Administration', path: '/review/settings', icon: Settings },
+      { label: 'Security', path: '/review/security', icon: Shield },
+      { label: 'Help & Training', path: '/review/help', icon: HelpCircle },
     ],
   },
 ];

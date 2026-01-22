@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Textarea } from '../components/ui/textarea';
+import { Label } from '../components/ui/label';
+import { Input } from '../components/ui/input';
 import {
   Dialog,
   DialogContent,
@@ -13,7 +12,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from '../components/ui/dialog';
 import {
   FileText,
   CheckCircle2,
@@ -25,10 +24,10 @@ import {
   AlertCircle,
   X,
 } from 'lucide-react';
-import { mockISOInputs, ISOInput } from '@/data/mockData';
-import { cn } from '@/lib/utils';
-import { Progress } from '@/components/ui/progress';
-import { toast } from '@/hooks/use-toast';
+import { mockISOInputs, ISOInput } from '../data/mockData';
+import { cn } from '../lib/utils';
+import { Progress } from '../components/ui/progress';
+import { toast } from '../hooks/use-toast';
 
 export function ISOInputs() {
   const [inputs, setInputs] = useState<ISOInput[]>(mockISOInputs);
@@ -140,7 +139,7 @@ export function ISOInputs() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -393,6 +392,6 @@ export function ISOInputs() {
           </DialogContent>
         </Dialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Badge } from '../components/ui/badge';
 import { HelpCircle, BookOpen, Video, Search, ExternalLink, MessageCircle, FileText, Play, X } from 'lucide-react';
-import { helpArticles, trainingVideos } from '@/data/mockData';
+import { helpArticles, trainingVideos } from '../data/mockData';
 import {
   Dialog,
   DialogContent,
@@ -13,10 +12,10 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { toast } from '@/hooks/use-toast';
+} from '../components/ui/dialog';
+import { Textarea } from '../components/ui/textarea';
+import { Label } from '../components/ui/label';
+import { toast } from '../hooks/use-toast';
 
 export function Help() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -84,7 +83,7 @@ export function Help() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div>
           <h1 className="text-2xl font-bold text-foreground flex items-center gap-2"><HelpCircle className="h-6 w-6" />Help & Training</h1>
@@ -281,6 +280,6 @@ export function Help() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </MainLayout>
+    </>
   );
 }

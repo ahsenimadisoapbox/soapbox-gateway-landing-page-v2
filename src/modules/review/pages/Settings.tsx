@@ -1,18 +1,17 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Switch } from '@/components/ui/switch';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { Switch } from '../components/ui/switch';
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '../components/ui/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { Settings as SettingsIcon, Users, Building, Bell, Plus, Pencil, Eye, Trash2, Save } from 'lucide-react';
-import { roles, orgUnits } from '@/data/mockData';
-import { useApp } from '@/contexts/AppContext';
-import { toast } from '@/hooks/use-toast';
+import { roles, orgUnits } from '../data/mockData';
+import { useReview } from '../contexts/ReviewContext';
+import { toast } from '../hooks/use-toast';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -22,10 +21,10 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from '@/components/ui/alert-dialog';
+} from '../components/ui/alert-dialog';
 
 export function Settings() {
-  const { users } = useApp();
+  const { users } = useReview();
   const [userList, setUserList] = useState(users);
   const [rolesList, setRolesList] = useState(roles);
   const [orgUnitsList, setOrgUnitsList] = useState(orgUnits);
@@ -160,7 +159,7 @@ export function Settings() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div>
           <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
@@ -408,6 +407,6 @@ export function Settings() {
           </AlertDialogContent>
         </AlertDialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

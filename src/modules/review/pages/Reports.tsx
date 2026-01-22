@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import {
   Dialog,
   DialogContent,
@@ -10,16 +9,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
+} from '../components/ui/dialog';
+import { Label } from '../components/ui/label';
+import { Input } from '../components/ui/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
+} from '../components/ui/select';
 import {
   BarChart3,
   Download,
@@ -31,7 +30,7 @@ import {
   Printer,
   Eye,
 } from 'lucide-react';
-import { dashboardStats } from '@/data/mockData';
+import { dashboardStats } from '../data/mockData';
 import {
   BarChart,
   Bar,
@@ -43,7 +42,7 @@ import {
   LineChart,
   Line,
 } from 'recharts';
-import { toast } from '@/hooks/use-toast';
+import { toast } from '../hooks/use-toast';
 
 const quarterlyData = [
   { quarter: 'Q1 2024', reviews: 3, actions: 12, capas: 4 },
@@ -132,7 +131,7 @@ export function Reports() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -417,6 +416,6 @@ export function Reports() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </MainLayout>
+    </>
   );
 }

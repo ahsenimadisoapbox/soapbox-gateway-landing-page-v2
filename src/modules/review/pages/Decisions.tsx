@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Input } from '../components/ui/input';
 import {
   Dialog,
   DialogContent,
@@ -11,16 +10,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from '../components/ui/dialog';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+} from '../components/ui/select';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -28,7 +27,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '../components/ui/table';
 import {
   Plus,
   Search,
@@ -38,8 +37,8 @@ import {
   Filter,
   Lightbulb,
 } from 'lucide-react';
-import { mockDecisions, Decision } from '@/data/mockData';
-import { cn } from '@/lib/utils';
+import { mockDecisions, Decision } from '../data/mockData';
+import { cn } from '../lib/utils';
 
 export function Decisions() {
   const [decisions, setDecisions] = useState<Decision[]>(mockDecisions);
@@ -148,7 +147,7 @@ export function Decisions() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -332,6 +331,6 @@ export function Decisions() {
           </DialogContent>
         </Dialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

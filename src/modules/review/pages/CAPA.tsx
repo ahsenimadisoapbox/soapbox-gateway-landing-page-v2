@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Input } from '../components/ui/input';
 import {
   Dialog,
   DialogContent,
@@ -11,16 +10,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from '../components/ui/dialog';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+} from '../components/ui/select';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -28,7 +27,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '../components/ui/table';
 import {
   Plus,
   Search,
@@ -38,10 +37,10 @@ import {
   Filter,
   AlertTriangle,
 } from 'lucide-react';
-import { mockCAPAs, CAPA } from '@/data/mockData';
-import { cn } from '@/lib/utils';
+import { mockCAPAs, CAPA } from '../data/mockData';
+import { cn } from '../lib/utils';
 
-export function CAPAPage() {
+export function CAPA() {
   const [capas, setCAPAs] = useState<CAPA[]>(mockCAPAs);
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
@@ -169,7 +168,7 @@ export function CAPAPage() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -448,6 +447,6 @@ export function CAPAPage() {
           </DialogContent>
         </Dialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

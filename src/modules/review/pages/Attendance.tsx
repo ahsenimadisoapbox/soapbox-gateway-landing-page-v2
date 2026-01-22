@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Input } from '../components/ui/input';
 import {
   Dialog,
   DialogContent,
@@ -11,7 +10,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from '../components/ui/dialog';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -21,16 +20,16 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from '@/components/ui/alert-dialog';
+} from '../components/ui/alert-dialog';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+} from '../components/ui/select';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -38,7 +37,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '../components/ui/table';
 import {
   Search,
   Eye,
@@ -50,11 +49,11 @@ import {
   XCircle,
   AlertCircle,
 } from 'lucide-react';
-import { mockAttendance, Attendance } from '@/data/mockData';
-import { cn } from '@/lib/utils';
-import { toast } from '@/hooks/use-toast';
+import { mockAttendance, Attendance } from '../data/mockData';
+import { cn } from '../lib/utils';
+import { toast } from '../hooks/use-toast';
 
-export function AttendancePage() {
+export function Attendance() {
   const [attendance, setAttendance] = useState<Attendance[]>(mockAttendance);
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
@@ -135,7 +134,7 @@ export function AttendancePage() {
   };
 
   return (
-    <MainLayout>
+    <>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -366,6 +365,6 @@ export function AttendancePage() {
           </AlertDialogContent>
         </AlertDialog>
       </div>
-    </MainLayout>
+    </>
   );
 }

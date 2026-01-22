@@ -2,27 +2,50 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+
 import Login from "./pages/Login";
-import NotFound from "./pages/NotFound";
+import Dashboard from "./pages/Dashboard";
 import Logout from "./pages/Logout";
+import NotFound from "./pages/NotFound";
+
+import reviewRoutes from "@/modules/review/routes";
 
 const queryClient = new QueryClient();
+
+/* =========================
+   ROUTES CONFIG
+========================= */
+
+function AppRoutes() {
+  const routes = useRoutes([
+    { path: "/", element: <Login /> },
+    { path: "/dashboard", element: <Dashboard /> },
+    { path: "/logout", element: <Logout /> },
+
+    // 🔥 Review module routes (object-based)
+    reviewRoutes,
+
+    { path: "*", element: <NotFound /> },
+  ]);
+
+  return routes;
+}
+
+/* =========================
+   APP ROOT
+========================= */
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/logout" element={<Logout />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AppRoutes />
       </BrowserRouter>
+
     </TooltipProvider>
   </QueryClientProvider>
 );

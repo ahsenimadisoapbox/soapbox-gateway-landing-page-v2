@@ -12,6 +12,10 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const navigate = useNavigate();
+  
+  if(localStorage.getItem("isAuthenticated") === "true") {
+    navigate("/dashboard");
+  }
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();

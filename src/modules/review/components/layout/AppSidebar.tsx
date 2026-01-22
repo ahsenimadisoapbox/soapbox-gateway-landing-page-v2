@@ -35,7 +35,7 @@ const navSections: NavSection[] = [
   {
     title: 'Overview',
     items: [
-      { label: 'Dashboard', path: '/', icon: LayoutDashboard },
+      { label: 'Dashboard', path: '/review', icon: LayoutDashboard },
       { label: 'Review Calendar', path: '/calendar', icon: CalendarDays },
     ],
   },
@@ -50,7 +50,7 @@ const navSections: NavSection[] = [
   {
     title: 'Actions & CAPA',
     items: [
-      { label: 'Actions', path: '/actions', icon: ListTodo },
+      { label: 'Actions', path: '/review/actions', icon: ListTodo },
       { label: 'CAPA', path: '/capa', icon: AlertTriangle },
     ],
   },

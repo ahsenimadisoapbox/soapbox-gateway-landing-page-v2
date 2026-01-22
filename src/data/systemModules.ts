@@ -100,7 +100,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Validation Management", description: "Validation and verification.", url: "https://id-preview--c60da579-6f19-4fa2-bf83-25bbad8f29ee.lovable.app/", icon: BadgeCheck },
         { title: "SPC & Quality Analytics", description: "Statistical process control.", icon: BarChart3, comingSoon: true },
         { title: "KPI & Dashboards", description: "Performance dashboards.", icon: PieChart, comingSoon: true },
-        { title: "Management Review", description: "Management review module.", url: "https://id-preview--af7b0073-1baf-4191-a1ec-b75156c1aff1.lovable.app/", icon: Users },
+        { title: "Management Review", description: "Management review module.", url: "/review", icon: Users },
         { title: "Supplier Qualification", description: "Supplier qualification workflow.", icon: UserCheck, comingSoon: true },
       ]
     },

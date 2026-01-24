@@ -10,6 +10,7 @@ import Logout from "./pages/Logout";
 import NotFound from "./pages/NotFound";
 
 import reviewRoutes from "@/modules/review/routes";
+import executiveRoutes from "@/modules/executive/routes";
 
 const queryClient = new QueryClient();
 
@@ -23,8 +24,11 @@ function AppRoutes() {
     { path: "/dashboard", element: <Dashboard /> },
     { path: "/logout", element: <Logout /> },
 
-    // 🔥 Review module routes (object-based)
+    // 🔥 Review module routes
     reviewRoutes,
+
+    // 🔥 Executive module routes
+    executiveRoutes,
 
     { path: "*", element: <NotFound /> },
   ]);
@@ -45,7 +49,6 @@ const App = () => (
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
-
     </TooltipProvider>
   </QueryClientProvider>
 );

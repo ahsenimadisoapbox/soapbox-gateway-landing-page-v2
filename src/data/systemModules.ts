@@ -33,7 +33,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       title: "Core EHS Engine",
       modules: [
         { title: "Executive Console", description: "Executive dashboard for EHS oversight and analytics.", url: "/executive", icon: LayoutDashboard },
-        { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "https://preview--ops-resolve-dash.lovable.app/dashboard", icon: AlertTriangle },
+        { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "/incident", icon: AlertTriangle },
         { title: "Audit Management", description: "Streamlines audit planning, execution, and closure.", url: "https://preview--soapbox-audit-craft.lovable.app/dashboard", icon: ClipboardCheck },
         { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://preview--soapbox-capa-flow.lovable.app/", icon: FileCheck },
         { title: "Risk Management", description: "Identifies, assesses, and mitigates organizational risks.", url: "https://preview--random-page.lovable.app/", icon: Shield },

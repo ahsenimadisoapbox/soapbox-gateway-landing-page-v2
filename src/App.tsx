@@ -9,8 +9,10 @@ import Dashboard from "./pages/Dashboard";
 import Logout from "./pages/Logout";
 import NotFound from "./pages/NotFound";
 
+// Module routes
 import reviewRoutes from "@/modules/review/routes";
 import executiveRoutes from "@/modules/executive/routes";
+import incidentRoutes from "@/modules/incident/routes";
 
 const queryClient = new QueryClient();
 
@@ -24,12 +26,16 @@ function AppRoutes() {
     { path: "/dashboard", element: <Dashboard /> },
     { path: "/logout", element: <Logout /> },
 
-    // 🔥 Review module routes
+    // 🔥 Review module
     reviewRoutes,
 
-    // 🔥 Executive module routes
+    // 🔥 Executive module
     executiveRoutes,
 
+    // 🔥 Incident module
+    incidentRoutes,
+
+    // Global 404
     { path: "*", element: <NotFound /> },
   ]);
 

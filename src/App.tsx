@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import reviewRoutes from "@/modules/review/routes";
 import executiveRoutes from "@/modules/executive/routes";
 import incidentRoutes from "@/modules/incident/routes";
+import auditRoutes from "@/modules/audit/routes"; // ✅ Audit added
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,9 @@ function AppRoutes() {
 
     // 🔥 Incident module
     incidentRoutes,
+
+    // 🔥 Audit module
+    auditRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

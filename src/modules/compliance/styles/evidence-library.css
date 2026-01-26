@@ -1,0 +1,178 @@
+/* Evidence Library Page Styles */
+.evidence-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evidence-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.evidence-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.evidence-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.evidence-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.evidence-stat-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.evidence-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.evidence-stat-label {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.evidence-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.evidence-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.evidence-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.evidence-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.evidence-file-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.evidence-file-icon--pdf {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(0 84% 60%);
+}
+
+.evidence-file-icon--image {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(217 91% 60%);
+}
+
+.evidence-file-icon--doc {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(220 9% 46%);
+}
+
+.evidence-file-name {
+  font-weight: 500;
+}
+
+.evidence-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.evidence-upload-zone {
+  border: 2px dashed hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.evidence-upload-icon {
+  width: 2rem;
+  height: 2rem;
+  color: hsl(150 10% 45%);
+  margin: 0 auto 0.5rem;
+}
+
+.evidence-upload-text {
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+}
+
+.evidence-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.evidence-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.evidence-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.evidence-input,
+.evidence-textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.evidence-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

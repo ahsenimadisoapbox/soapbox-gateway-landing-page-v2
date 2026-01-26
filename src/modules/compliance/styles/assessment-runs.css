@@ -1,0 +1,214 @@
+/* Assessment Runs Page Styles */
+.runs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.runs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.runs-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.runs-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.runs-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.runs-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.runs-stat-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.runs-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.runs-stat-value--green {
+  color: hsl(142 76% 36%);
+}
+
+.runs-stat-value--blue {
+  color: hsl(217 91% 60%);
+}
+
+.runs-stat-label {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.runs-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.runs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.runs-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.runs-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.runs-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.runs-template-name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.runs-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.runs-progress-bar {
+  width: 4rem;
+  height: 0.5rem;
+  background-color: hsl(150 10% 90%);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.runs-progress-fill {
+  height: 100%;
+  background-color: hsl(150 45% 35%);
+}
+
+.runs-progress-text {
+  font-size: 0.75rem;
+}
+
+.runs-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.runs-badge--completed {
+  background-color: hsl(142 76% 90%);
+  color: hsl(142 76% 30%);
+}
+
+.runs-badge--in-progress {
+  background-color: hsl(217 91% 90%);
+  color: hsl(217 91% 30%);
+}
+
+.runs-badge--paused {
+  background-color: hsl(45 93% 90%);
+  color: hsl(45 93% 30%);
+}
+
+.runs-badge--not-started {
+  background-color: hsl(220 9% 90%);
+  color: hsl(220 9% 30%);
+}
+
+.runs-score {
+  font-weight: 500;
+}
+
+.runs-score--empty {
+  color: hsl(150 10% 45%);
+}
+
+.runs-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.runs-btn-icon {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.runs-btn-icon:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.runs-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.runs-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.runs-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.runs-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.runs-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

@@ -1,0 +1,255 @@
+/* Tasks Page Styles */
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.tasks-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.tasks-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.tasks-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.tasks-stat-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tasks-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tasks-stat-value--blue {
+  color: hsl(217 91% 60%);
+}
+
+.tasks-stat-value--green {
+  color: hsl(142 76% 36%);
+}
+
+.tasks-stat-value--red {
+  color: hsl(0 84% 60%);
+}
+
+.tasks-stat-value--orange {
+  color: hsl(25 95% 53%);
+}
+
+.tasks-stat-label {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.tasks-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasks-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.tasks-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.tasks-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.tasks-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tasks-badge--completed {
+  background-color: hsl(142 76% 90%);
+  color: hsl(142 76% 30%);
+}
+
+.tasks-badge--in-progress {
+  background-color: hsl(217 91% 90%);
+  color: hsl(217 91% 30%);
+}
+
+.tasks-badge--open {
+  background-color: hsl(220 9% 90%);
+  color: hsl(220 9% 30%);
+}
+
+.tasks-badge--overdue {
+  background-color: hsl(0 84% 90%);
+  color: hsl(0 84% 30%);
+}
+
+.tasks-badge--blocked {
+  background-color: hsl(45 93% 90%);
+  color: hsl(45 93% 30%);
+}
+
+.tasks-badge--critical {
+  background-color: hsl(0 84% 90%);
+  color: hsl(0 84% 30%);
+}
+
+.tasks-badge--high {
+  background-color: hsl(25 95% 90%);
+  color: hsl(25 95% 30%);
+}
+
+.tasks-badge--medium {
+  background-color: hsl(45 93% 90%);
+  color: hsl(45 93% 30%);
+}
+
+.tasks-badge--low {
+  background-color: hsl(220 9% 90%);
+  color: hsl(220 9% 30%);
+}
+
+.tasks-escalation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.tasks-escalation-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.tasks-escalation-none {
+  color: hsl(150 10% 45%);
+  font-size: 0.875rem;
+}
+
+.tasks-owner-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tasks-owner-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tasks-escalation-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tasks-escalation-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+}
+
+.tasks-escalation-level {
+  font-weight: 500;
+}
+
+.tasks-escalation-description {
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+}
+
+.tasks-escalation-badge--destructive {
+  background-color: hsl(0 84% 60%);
+  color: white;
+}
+
+.tasks-evidence-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tasks-evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tasks-activity-log {
+  border-top: 1px solid hsl(150 15% 88%);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.tasks-activity-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.tasks-activity-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  padding: 0.25rem 0;
+}

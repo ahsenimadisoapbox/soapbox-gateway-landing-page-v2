@@ -1,0 +1,217 @@
+/* Domain Page Styles */
+.domain-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.domain-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.domain-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.domain-subtitle {
+  color: hsl(150 10% 45%);
+  font-size: 0.875rem;
+}
+
+.domain-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.domain-btn-primary:hover {
+  background-color: hsl(150 45% 30%);
+}
+
+.domain-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.domain-stat-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.domain-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.domain-stat-label {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.domain-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.domain-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.domain-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.domain-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.domain-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.domain-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid hsl(150 15% 88%);
+}
+
+.domain-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.domain-btn-icon {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.domain-btn-icon:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.domain-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  max-width: 48rem;
+  padding: 1.5rem;
+}
+
+.domain-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.domain-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.domain-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.domain-input,
+.domain-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.domain-input:focus,
+.domain-select:focus {
+  outline: none;
+  border-color: hsl(150 45% 35%);
+}
+
+.domain-textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.domain-linked-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.domain-linked-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.domain-linked-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.domain-linked-link {
+  color: hsl(150 45% 35%);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.domain-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.domain-tag {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.domain-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

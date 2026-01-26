@@ -1,0 +1,219 @@
+/* Escalation Policies Page Styles */
+.escalation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.escalation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.escalation-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.escalation-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.escalation-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.escalation-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.escalation-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.escalation-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.escalation-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.escalation-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.escalation-trigger-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.escalation-trigger-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.escalation-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.escalation-badge--levels {
+  border: 1px solid hsl(150 15% 88%);
+  background: transparent;
+}
+
+.escalation-badge--active {
+  background-color: hsl(142 76% 90%);
+  color: hsl(142 76% 30%);
+}
+
+.escalation-badge--email {
+  background-color: hsl(150 20% 90%);
+  color: hsl(150 45% 20%);
+}
+
+.escalation-badge--sms {
+  background-color: hsl(150 20% 90%);
+  color: hsl(150 45% 20%);
+}
+
+.escalation-notifications {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.escalation-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.escalation-btn-icon {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.escalation-btn-icon:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.escalation-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  max-width: 40rem;
+}
+
+.escalation-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+  margin-bottom: 1rem;
+}
+
+.escalation-tab {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: hsl(150 10% 45%);
+  border-bottom: 2px solid transparent;
+}
+
+.escalation-tab--active {
+  color: hsl(150 45% 35%);
+  border-bottom-color: hsl(150 45% 35%);
+}
+
+.escalation-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.escalation-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.escalation-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.escalation-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.escalation-json-editor {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+}
+
+.escalation-json-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.escalation-json-content {
+  padding: 1rem;
+}
+
+.escalation-textarea {
+  width: 100%;
+  min-height: 250px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  resize: vertical;
+}
+
+.escalation-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

@@ -1,0 +1,187 @@
+/* Assessment Templates Page Styles */
+.templates-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.templates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.templates-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.templates-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.templates-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.templates-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.templates-stat-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.templates-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.templates-stat-value--green {
+  color: hsl(142 76% 36%);
+}
+
+.templates-stat-label {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+}
+
+.templates-table-container {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.templates-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.templates-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(150 10% 45%);
+  border-bottom: 1px solid hsl(150 15% 88%);
+  background-color: hsl(150 10% 95%);
+}
+
+.templates-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.templates-table tr:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.templates-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.templates-name-icon {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(150 10% 45%);
+}
+
+.templates-name {
+  font-weight: 500;
+}
+
+.templates-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.templates-badge--published {
+  background-color: hsl(142 76% 90%);
+  color: hsl(142 76% 30%);
+}
+
+.templates-badge--draft {
+  background-color: hsl(45 93% 90%);
+  color: hsl(45 93% 30%);
+}
+
+.templates-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.templates-btn-icon {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.templates-btn-icon:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.templates-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.templates-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.templates-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.templates-input,
+.templates-textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.templates-dropzone {
+  border: 2px dashed hsl(150 15% 88%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: hsl(150 10% 45%);
+}
+
+.templates-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

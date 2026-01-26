@@ -1,0 +1,229 @@
+/* Calendar Events Page Styles */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.calendar-subtitle {
+  color: hsl(150 10% 45%);
+}
+
+.calendar-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(150 45% 35%);
+  color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.calendar-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.calendar-card {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.5rem;
+}
+
+.calendar-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+}
+
+.calendar-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.calendar-card-title-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.calendar-nav-btn {
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.calendar-nav-btn:hover {
+  background-color: hsl(150 10% 95%);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  padding: 1rem;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(150 10% 45%);
+  padding: 0.5rem;
+}
+
+.calendar-day-cell {
+  min-height: 80px;
+  padding: 0.25rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  background-color: hsl(0 0% 100%);
+}
+
+.calendar-day-cell--empty {
+  background-color: hsl(150 10% 95%);
+  opacity: 0.3;
+}
+
+.calendar-day-number {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.calendar-event {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar-event--critical {
+  background-color: hsl(0 84% 90%);
+  color: hsl(0 84% 30%);
+  border-left: 4px solid hsl(0 84% 60%);
+}
+
+.calendar-event--high {
+  background-color: hsl(25 95% 90%);
+  color: hsl(25 95% 30%);
+  border-left: 4px solid hsl(25 95% 53%);
+}
+
+.calendar-event--medium {
+  background-color: hsl(45 93% 90%);
+  color: hsl(45 93% 30%);
+  border-left: 4px solid hsl(45 93% 47%);
+}
+
+.calendar-event--low {
+  background-color: hsl(220 9% 90%);
+  color: hsl(220 9% 30%);
+  border-left: 4px solid hsl(220 9% 46%);
+}
+
+.calendar-upcoming-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid hsl(150 15% 88%);
+  font-weight: 600;
+}
+
+.calendar-upcoming-content {
+  padding: 1rem;
+}
+
+.calendar-upcoming-event {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-upcoming-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.calendar-upcoming-date {
+  font-size: 0.75rem;
+  color: hsl(150 10% 45%);
+  margin-top: 0.25rem;
+}
+
+.calendar-upcoming-badge {
+  display: inline-flex;
+  padding: 0.125rem 0.5rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.calendar-dialog {
+  background-color: hsl(0 0% 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.calendar-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.calendar-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.calendar-input,
+.calendar-select,
+.calendar-textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(150 15% 88%);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.calendar-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(150 15% 88%);
+}

@@ -14,7 +14,8 @@ import reviewRoutes from "@/modules/review/routes";
 import executiveRoutes from "@/modules/executive/routes";
 import incidentRoutes from "@/modules/incident/routes";
 import auditRoutes from "@/modules/audit/routes";
-import complianceRoutes from "@/modules/compliance/routes"; // ✅ Compliance added
+import complianceRoutes from "@/modules/compliance/routes";
+import qualityEventsRoutes from '@/modules/quality-events/routes';
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,9 @@ function AppRoutes() {
 
     // 🔥 Compliance module
     complianceRoutes,
+
+    // 🔥 Quality Events module
+    qualityEventsRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

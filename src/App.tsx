@@ -16,6 +16,7 @@ import incidentRoutes from "@/modules/incident/routes";
 import auditRoutes from "@/modules/audit/routes";
 import complianceRoutes from "@/modules/compliance/routes";
 import qualityEventsRoutes from '@/modules/quality-events/routes';
+import calibrationEquipmentRoutes from "@/modules/calibration-equipment/routes";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,9 @@ function AppRoutes() {
 
     // 🔥 Quality Events module
     qualityEventsRoutes,
+
+    // 🔥 Calibration & Equipment module
+    calibrationEquipmentRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

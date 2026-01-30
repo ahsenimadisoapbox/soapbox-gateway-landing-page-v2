@@ -18,6 +18,7 @@ import complianceRoutes from "@/modules/compliance/routes";
 import qualityEventsRoutes from '@/modules/quality-events/routes';
 import calibrationEquipmentRoutes from "@/modules/calibration-equipment/routes";
 import validationRoutes from "@/modules/validation/routes";
+import jobSafetyRoutes from "./modules/job-safety/routes";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +55,9 @@ function AppRoutes() {
 
     // 🔥 Validation module
     validationRoutes,
+
+    // 🔥 Job Safety module
+    jobSafetyRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

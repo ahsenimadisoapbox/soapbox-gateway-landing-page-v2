@@ -1,5 +1,5 @@
 import { Bell, User, Users, ChevronDown } from "lucide-react";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarTrigger } from "./ui/sidebar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,12 +7,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+} from "./ui/dropdown-menu";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import logo from "@/assets/logo.png";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import logo from "../assets/logo.png";
 
 export function TopNav() {
   const [showNotifications, setShowNotifications] = useState(false);

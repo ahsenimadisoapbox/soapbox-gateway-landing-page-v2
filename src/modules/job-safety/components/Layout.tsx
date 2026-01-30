@@ -1,13 +1,9 @@
-import { ReactNode } from "react";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/AppSidebar";
-import { TopNav } from "@/components/TopNav";
+import { Outlet } from "react-router-dom";
+import { SidebarProvider } from "./ui/sidebar";
+import { AppSidebar } from "./AppSidebar";
+import { TopNav } from "./TopNav";
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-export function Layout({ children }: LayoutProps) {
+export function Layout() {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full bg-background">
@@ -15,7 +11,7 @@ export function Layout({ children }: LayoutProps) {
         <div className="flex-1 flex flex-col w-full">
           <TopNav />
           <main className="flex-1 p-6">
-            {children}
+            <Outlet />
           </main>
           <footer className="border-t py-4 px-6 text-center text-sm text-muted-foreground">
             soapbox.cloud © 2025 - Version 1.0.0

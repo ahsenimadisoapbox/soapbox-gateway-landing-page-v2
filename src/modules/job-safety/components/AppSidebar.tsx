@@ -11,7 +11,7 @@ import {
   HelpCircle,
   ChevronRight
 } from "lucide-react";
-import { NavLink } from "@/components/NavLink";
+import { NavLink } from "./NavLink";
 import {
   Sidebar,
   SidebarContent,
@@ -25,31 +25,31 @@ import {
   SidebarMenuSubItem,
   SidebarMenuSubButton,
   useSidebar,
-} from "@/components/ui/sidebar";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+} from "./ui/sidebar";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 
 const jsaMenuItems = [
-  { title: "JSA Dashboard", url: "/", icon: LayoutDashboard },
-  { title: "My Pending Actions", url: "/my-pending-actions", icon: CheckSquare },
-  { title: "Create New JSA", url: "/create-jsa", icon: FileText },
-  { title: "JSA Library", url: "/jsa-library", icon: BookOpen },
+  { title: "JSA Dashboard", url: "/job-safety/", icon: LayoutDashboard },
+  { title: "My Pending Actions", url: "/job-safety/my-pending-actions", icon: CheckSquare },
+  { title: "Create New JSA", url: "/job-safety/create-jsa", icon: FileText },
+  { title: "JSA Library", url: "/job-safety/jsa-library", icon: BookOpen },
   {
     title: "Review & Approval",
     icon: CheckSquare,
     subItems: [
-      { title: "L1 Review Queue", url: "/review-l1" },
-      { title: "L2 Approvals", url: "/review-l2" },
+      { title: "L1 Review Queue", url: "/job-safety/review-l1" },
+      { title: "L2 Approvals", url: "/job-safety/review-l2" },
     ],
   },
-  { title: "Active JSAs", url: "/active-jsas", icon: FileWarning },
-  { title: "Archive", url: "/archive", icon: Archive },
-  { title: "Audit Log", url: "/audit-log", icon: FileText },
+  { title: "Active JSAs", url: "/job-safety/active-jsas", icon: FileWarning },
+  { title: "Archive", url: "/job-safety/archive", icon: Archive },
+  { title: "Audit Log", url: "/job-safety/audit-log", icon: FileText },
 ];
 
 const systemMenuItems = [
-  { title: "Administration", url: "/administration", icon: Settings },
-  { title: "Security", url: "/security", icon: Shield },
-  { title: "Help & Training", url: "/help", icon: HelpCircle },
+  { title: "Administration", url: "/job-safety/administration", icon: Settings },
+  { title: "Security", url: "/job-safety/security", icon: Shield },
+  { title: "Help & Training", url: "/job-safety/help", icon: HelpCircle },
 ];
 
 export function AppSidebar() {

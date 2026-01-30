@@ -17,6 +17,7 @@ import auditRoutes from "@/modules/audit/routes";
 import complianceRoutes from "@/modules/compliance/routes";
 import qualityEventsRoutes from '@/modules/quality-events/routes';
 import calibrationEquipmentRoutes from "@/modules/calibration-equipment/routes";
+import validationRoutes from "@/modules/validation/routes";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,9 @@ function AppRoutes() {
 
     // 🔥 Calibration & Equipment module
     calibrationEquipmentRoutes,
+
+    // 🔥 Validation module
+    validationRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

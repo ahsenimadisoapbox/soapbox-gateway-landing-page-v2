@@ -97,7 +97,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Calibration & Equipment Management", description: "Equipment calibration tracking.", url: "/calibration-equipment", icon: Settings },
         { title: "Quality Inspections & Product Release", description: "Product inspection and release.", url: "https://id-preview--96ff7a12-4629-431f-acf0-a56383f4a798.lovable.app/", icon: Search },
         { title: "Product Lifecycle Quality", description: "Quality across product lifecycle.", url: "https://id-preview--abd0bea0-8945-456d-9fe1-fd81b2fc1556.lovable.app/", icon: Layers },
-        { title: "Validation Management", description: "Validation and verification.", url: "https://id-preview--c60da579-6f19-4fa2-bf83-25bbad8f29ee.lovable.app/", icon: BadgeCheck },
+        { title: "Validation Management", description: "Validation and verification.", url: "/validation", icon: BadgeCheck },
         { title: "SPC & Quality Analytics", description: "Statistical process control.", icon: BarChart3, comingSoon: true },
         { title: "KPI & Dashboards", description: "Performance dashboards.", icon: PieChart, comingSoon: true },
         { title: "Management Review", description: "Management review module.", url: "/review", icon: Users },

@@ -42,7 +42,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Inspection", description: "Digital inspection forms and automated workflows.", url: "/inspection", icon: Search },
         { title: "Job Safety Analysis (JSA)", description: "Systematic evaluation of job tasks and safety.", url: "/job-safety", icon: ClipboardList },
         { title: "Safety Observation Reporting", description: "Report and track safety observations.", url: "/safety-observation", icon: Eye },
-        { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
+        { title: "Occupational Health", description: "Health monitoring and management.", url: "/occupational-health", icon: Stethoscope },
       ]
     },
     {

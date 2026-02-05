@@ -92,7 +92,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Audit & Inspection", description: "Quality audits and inspections.", icon: ClipboardCheck, comingSoon: true },
         { title: "Quality Risk Management", description: "Risk assessment for quality.", icon: Shield, comingSoon: true },
         { title: "Change Management", description: "Quality change control.", icon: RefreshCw, comingSoon: true },
-        { title: "Complaint & Customer Feedback", description: "Customer feedback management.", url: "https://id-preview--629aff38-aa42-4edd-807b-890c36a1b069.lovable.app/", icon: Megaphone },
+        { title: "Complaint & Customer Feedback", description: "Customer feedback management.", url: "/complaints-customer", icon: Megaphone },
         { title: "Supplier & Vendor Quality Management", description: "Vendor quality management.", url: "https://id-preview--32e5665f-bc7e-4f5c-ab35-27714a7bf028.lovable.app/", icon: Truck },
         { title: "Calibration & Equipment Management", description: "Equipment calibration tracking.", url: "/calibration-equipment", icon: Settings },
         { title: "Quality Inspections & Product Release", description: "Product inspection and release.", url: "https://id-preview--96ff7a12-4629-431f-acf0-a56383f4a798.lovable.app/", icon: Search },

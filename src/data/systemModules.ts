@@ -41,7 +41,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Non-Compliance Reporting", description: "Track non-compliance events with corrective actions.", url: "https://id-preview--6223ccbc-ecf4-42dd-8762-474380de042e.lovable.app/", icon: FileWarning },
         { title: "Inspection", description: "Digital inspection forms and automated workflows.", url: "/inspection", icon: Search },
         { title: "Job Safety Analysis (JSA)", description: "Systematic evaluation of job tasks and safety.", url: "/job-safety", icon: ClipboardList },
-        { title: "Safety Observation Reporting", description: "Report and track safety observations.", url: "https://id-preview--028c806b-042b-48fa-a108-cb742fe05d07.lovable.app/", icon: Eye },
+        { title: "Safety Observation Reporting", description: "Report and track safety observations.", url: "/safety-observation", icon: Eye },
         { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
       ]
     },

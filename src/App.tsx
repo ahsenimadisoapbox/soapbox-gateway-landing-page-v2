@@ -21,6 +21,7 @@ import validationRoutes from "./modules/validation/routes";
 import jobSafetyRoutes from "./modules/job-safety/routes";
 import complaintsCustomerRoutes from "./modules/complaints-customer/routes";
 import inspectionRoutes from "./modules/inspection/routes";
+import safetyObservationRoutes from "./modules/safety-observation/routes";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +67,9 @@ function AppRoutes() {
 
     // 🔥 Inspection module
     inspectionRoutes,
+
+    // 🔥 Safety Observation module
+    safetyObservationRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

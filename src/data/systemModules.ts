@@ -38,7 +38,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://preview--soapbox-capa-flow.lovable.app/", icon: FileCheck },
         { title: "Risk Management", description: "Identifies, assesses, and mitigates organizational risks.", url: "https://preview--random-page.lovable.app/", icon: Shield },
         { title: "Compliance Management", description: "Monitors compliance with regulations.", url: "/compliance", icon: CheckSquare },
-        { title: "Non-Compliance Reporting", description: "Track non-compliance events with corrective actions.", url: "https://id-preview--6223ccbc-ecf4-42dd-8762-474380de042e.lovable.app/", icon: FileWarning },
+        { title: "Non-Compliance Reporting", description: "Track non-compliance events with corrective actions.", url: "/non-compliance", icon: FileWarning },
         { title: "Inspection", description: "Digital inspection forms and automated workflows.", url: "/inspection", icon: Search },
         { title: "Job Safety Analysis (JSA)", description: "Systematic evaluation of job tasks and safety.", url: "/job-safety", icon: ClipboardList },
         { title: "Safety Observation Reporting", description: "Report and track safety observations.", url: "/safety-observation", icon: Eye },

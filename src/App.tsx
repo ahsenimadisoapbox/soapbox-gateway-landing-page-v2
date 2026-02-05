@@ -23,6 +23,7 @@ import complaintsCustomerRoutes from "./modules/complaints-customer/routes";
 import inspectionRoutes from "./modules/inspection/routes";
 import safetyObservationRoutes from "./modules/safety-observation/routes";
 import occupationalHealthRoutes from "./modules/occupational-health/routes";
+import nonComplianceRoutes from "./modules/non-compliance/routes";
 
 const queryClient = new QueryClient();
 
@@ -74,6 +75,9 @@ function AppRoutes() {
 
     // 🔥 Occupational Health module
     occupationalHealthRoutes,
+
+    // 🔥 Non-Compliance module
+    nonComplianceRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

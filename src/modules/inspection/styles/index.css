@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 150 32% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 32% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 32% 15%;
+
+    --primary: 150 32% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 146 28% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 146 45% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 150 32% 15%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 150 32% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 146 28% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 30% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 150 25% 25%;
+    --sidebar-ring: 146 45% 55%;
+
+    --status-draft: 210 15% 60%;
+    --status-assigned: 199 89% 48%;
+    --status-in-progress: 38 92% 50%;
+    --status-submitted: 262 52% 47%;
+    --status-approved: 142 71% 45%;
+    --status-rejected: 0 72% 51%;
+    --status-closed: 210 10% 50%;
+  }
+
+  .dark {
+    --background: 150 32% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 150 30% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 150 30% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 146 45% 55%;
+    --primary-foreground: 150 32% 15%;
+
+    --secondary: 150 25% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 150 20% 20%;
+    --muted-foreground: 150 10% 65%;
+
+    --accent: 146 40% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 20% 25%;
+    --input: 150 20% 25%;
+    --ring: 146 45% 55%;
+
+    --sidebar-background: 150 32% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 146 28% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 30% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 150 25% 25%;
+    --sidebar-ring: 146 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

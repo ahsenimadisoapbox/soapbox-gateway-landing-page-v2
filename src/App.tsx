@@ -10,16 +10,17 @@ import Logout from "./pages/Logout";
 import NotFound from "./pages/NotFound";
 
 // Module routes
-import reviewRoutes from "@/modules/review/routes";
-import executiveRoutes from "@/modules/executive/routes";
-import incidentRoutes from "@/modules/incident/routes";
-import auditRoutes from "@/modules/audit/routes";
-import complianceRoutes from "@/modules/compliance/routes";
-import qualityEventsRoutes from '@/modules/quality-events/routes';
-import calibrationEquipmentRoutes from "@/modules/calibration-equipment/routes";
-import validationRoutes from "@/modules/validation/routes";
+import reviewRoutes from "./modules/review/routes";
+import executiveRoutes from "./modules/executive/routes";
+import incidentRoutes from "./modules/incident/routes";
+import auditRoutes from "./modules/audit/routes";
+import complianceRoutes from "./modules/compliance/routes";
+import qualityEventsRoutes from './modules/quality-events/routes';
+import calibrationEquipmentRoutes from "./modules/calibration-equipment/routes";
+import validationRoutes from "./modules/validation/routes";
 import jobSafetyRoutes from "./modules/job-safety/routes";
 import complaintsCustomerRoutes from "./modules/complaints-customer/routes";
+import inspectionRoutes from "./modules/inspection/routes";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +64,9 @@ function AppRoutes() {
     // 🔥 Complaints Customer module
     complaintsCustomerRoutes,
 
+    // 🔥 Inspection module
+    inspectionRoutes,
+
     // Global 404
     { path: "*", element: <NotFound /> },
   ]);
@@ -79,7 +83,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>

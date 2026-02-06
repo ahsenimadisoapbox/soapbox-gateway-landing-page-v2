@@ -36,7 +36,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "/incident", icon: AlertTriangle },
         { title: "Audit Management", description: "Streamlines audit planning, execution, and closure.", url: "/audit", icon: ClipboardCheck },
         { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "/capa", icon: FileCheck },
-        { title: "Risk Management", description: "Identifies, assesses, and mitigates organizational risks.", url: "https://preview--random-page.lovable.app/", icon: Shield },
+        { title: "Risk Management", description: "Identifies, assesses, and mitigates organizational risks.", url: "/risk", icon: Shield },
         { title: "Compliance Management", description: "Monitors compliance with regulations.", url: "/compliance", icon: CheckSquare },
         { title: "Non-Compliance Reporting", description: "Track non-compliance events with corrective actions.", url: "/non-compliance", icon: FileWarning },
         { title: "Inspection", description: "Digital inspection forms and automated workflows.", url: "/inspection", icon: Search },

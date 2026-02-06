@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 150 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 25% 15%;
+
+    /* Pine green primary - #1d2f26 */
+    --primary: 150 25% 15%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Lighter pine for accents */
+    --primary-light: 150 20% 25%;
+    --primary-lighter: 150 15% 35%;
+
+    --secondary: 150 10% 90%;
+    --secondary-foreground: 150 25% 15%;
+
+    --muted: 150 10% 95%;
+    --muted-foreground: 150 8% 45%;
+
+    --accent: 150 30% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 98%;
+
+    --border: 150 10% 88%;
+    --input: 150 10% 88%;
+    --ring: 150 25% 15%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Pine green theme */
+    --sidebar-background: 150 25% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 150 30% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 150 20% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 150 20% 20%;
+    --sidebar-ring: 150 30% 40%;
+    
+    /* Status colors */
+    --status-open: 199 89% 48%;
+    --status-in-progress: 38 92% 50%;
+    --status-closed: 142 71% 45%;
+    --status-overdue: 0 72% 51%;
+    
+    /* Priority colors */
+    --priority-critical: 0 72% 51%;
+    --priority-high: 14 100% 57%;
+    --priority-medium: 38 92% 50%;
+    --priority-low: 142 71% 45%;
+  }
+
+  .dark {
+    --background: 150 15% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 150 20% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 150 20% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 150 30% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 150 15% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 150 15% 20%;
+    --muted-foreground: 150 10% 65%;
+
+    --accent: 150 30% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 150 30% 40%;
+    
+    --sidebar-background: 150 25% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 150 30% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 150 20% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 150 20% 20%;
+    --sidebar-ring: 150 30% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

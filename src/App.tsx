@@ -24,6 +24,7 @@ import inspectionRoutes from "./modules/inspection/routes";
 import safetyObservationRoutes from "./modules/safety-observation/routes";
 import occupationalHealthRoutes from "./modules/occupational-health/routes";
 import nonComplianceRoutes from "./modules/non-compliance/routes";
+import capaRoutes from "./modules/capa/routes";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +79,9 @@ function AppRoutes() {
 
     // 🔥 Non-Compliance module
     nonComplianceRoutes,
+
+    // 🔥 CAPA module
+    capaRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

@@ -25,6 +25,7 @@ import safetyObservationRoutes from "./modules/safety-observation/routes";
 import occupationalHealthRoutes from "./modules/occupational-health/routes";
 import nonComplianceRoutes from "./modules/non-compliance/routes";
 import capaRoutes from "./modules/capa/routes";
+import riskRoutes from "./modules/risk/routes";
 
 const queryClient = new QueryClient();
 
@@ -82,6 +83,9 @@ function AppRoutes() {
 
     // 🔥 CAPA module
     capaRoutes,
+
+    // 🔥 Risk module
+    riskRoutes,
 
     // Global 404
     { path: "*", element: <NotFound /> },

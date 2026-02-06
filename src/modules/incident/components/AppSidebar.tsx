@@ -28,7 +28,7 @@ import {
 const menuItems = [
   {
     title: "Dashboard",
-    url: "/incident/dashboard",
+    url: "/incident",
     icon: LayoutDashboard,
   },
   {

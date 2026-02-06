@@ -15,6 +15,8 @@ import {
 } from "./ui/dropdown-menu";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 import logo from "../assets/logo.png";
+import '../styles/style.css';
+import '../styles/index.css';
 
 export function Layout() {
   const [currentUser, setCurrentUser] = useState(

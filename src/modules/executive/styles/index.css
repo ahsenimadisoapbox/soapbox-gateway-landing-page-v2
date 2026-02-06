@@ -1,0 +1,307 @@
+/* =========================================================
+   SoapBox.Cloud Executive Counsel Design System
+   Pure Custom CSS (No Tailwind)
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+  --background: 0 0% 98%;
+  --foreground: 150 20% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 150 20% 15%;
+
+  --primary: 150 30% 16%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 150 10% 95%;
+  --secondary-foreground: 150 20% 20%;
+
+  --muted: 150 5% 92%;
+  --muted-foreground: 150 10% 45%;
+
+  --accent: 152 60% 40%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 72% 51%;
+  --warning: 38 92% 50%;
+  --success: 142 76% 36%;
+  --info: 199 89% 48%;
+
+  --border: 150 10% 88%;
+  --radius: 0.5rem;
+
+  --sidebar-background: 150 28% 15%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-muted: 150 15% 60%;
+  --sidebar-accent: 150 20% 22%;
+
+  --shadow-sm: 0 1px 2px hsl(150 20% 15% / 0.05);
+  --shadow-md: 0 4px 6px hsl(150 20% 15% / 0.1);
+}
+
+/* =========================
+   BASE RESET
+========================= */
+* {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
+
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* =========================
+   KPI CARDS
+========================= */
+.kpi-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.kpi-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.kpi-label {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* =========================
+   EXECUTIVE PANELS
+========================= */
+.executive-panel {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.executive-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.executive-panel-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-high {
+  background: hsl(var(--destructive) / 0.15);
+  color: hsl(var(--destructive));
+}
+
+.status-medium {
+  background: hsl(var(--warning) / 0.15);
+  color: hsl(var(--warning));
+}
+
+.status-low {
+  background: hsl(var(--success) / 0.15);
+  color: hsl(var(--success));
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.nav-section-title {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsl(var(--sidebar-muted));
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: hsl(var(--sidebar-foreground) / 0.8);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover {
+  background: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-foreground));
+}
+
+.nav-item-active {
+  background: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-foreground));
+  font-weight: 500;
+}
+
+/* =========================
+   ACTION BAR
+========================= */
+.action-bar {
+  background: hsl(var(--card));
+  border-top: 1px solid hsl(var(--border));
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* =========================
+   TABLE ROWS
+========================= */
+.data-table-row {
+  border-bottom: 1px solid hsl(var(--border));
+  transition: background 0.15s ease;
+}
+
+.data-table-row:hover {
+  background: hsl(var(--muted) / 0.5);
+}
+
+/* =========================
+   TRENDS
+========================= */
+.trend-up {
+  color: hsl(var(--success));
+}
+
+.trend-down {
+  color: hsl(var(--destructive));
+}
+
+.trend-stable {
+  color: hsl(var(--muted-foreground));
+}
+
+/* =========================
+   HEATMAP
+========================= */
+.heatmap-cell {
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.05);
+}
+
+.heatmap-critical { background: hsl(var(--destructive)); }
+.heatmap-high { background: hsl(var(--warning)); }
+.heatmap-medium { background: #facc15; }
+.heatmap-low { background: hsl(var(--success)); }
+
+/* =========================
+   SCROLLBAR
+========================= */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.3);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* =========================
+   GRADIENTS
+========================= */
+.gradient-primary {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--primary)),
+    hsl(var(--accent))
+  );
+}
+
+.gradient-success {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--success)),
+    hsl(152 60% 50%)
+  );
+}

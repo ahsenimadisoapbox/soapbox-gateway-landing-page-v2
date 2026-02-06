@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { AuditProvider } from '../../contexts/AuditContext';
+import '../../styles/index.css';
 
 export const MainLayout = () => {
   return (

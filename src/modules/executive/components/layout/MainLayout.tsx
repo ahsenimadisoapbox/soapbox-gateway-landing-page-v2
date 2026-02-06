@@ -4,6 +4,8 @@ import { ExecutiveProvider } from "../../store/ExecutiveContext";
 import { Sidebar } from "./Sidebar";
 import { Header } from "./Header";
 import "./styles.css";
+import "../../styles/index.css";
+import "../../styles/style.css";
 
 interface MainLayoutProps {
   className?: string;

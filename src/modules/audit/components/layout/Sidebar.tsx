@@ -15,7 +15,7 @@ import {
 import { cn } from '../../lib/utils';
 
 const navigation = [
-  { name: 'Audit Dashboard', href: '/audit/dashboard', icon: LayoutDashboard },
+  { name: 'Audit Dashboard', href: '/audit', icon: LayoutDashboard },
   { name: 'Audit Planning', href: '/audit/planning', icon: Calendar },
   { name: 'Audit Checklists', href: '/audit/checklists', icon: ClipboardList },
   { name: 'Findings & NCRs', href: '/audit/findings', icon: AlertTriangle },

@@ -118,10 +118,10 @@ const CAPA = () => {
                   <TableCell>{capa.dueDate}</TableCell>
                   <TableCell className="text-right">
                     <div className="flex justify-end gap-1">
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/capa/${capa.id}/view`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/capa/${capa.id}/view`)}>
                         <Eye className="h-4 w-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/capa/${capa.id}/edit`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/capa/${capa.id}/edit`)}>
                         <Edit className="h-4 w-4" />
                       </Button>
                     </div>

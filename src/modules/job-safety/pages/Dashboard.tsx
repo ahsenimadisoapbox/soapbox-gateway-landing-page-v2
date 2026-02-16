@@ -48,7 +48,7 @@ const Dashboard = () => {
   };
 
   const handleEdit = (jsa: any) => {
-    navigate(`/edit-jsa?id=${jsa.id}`);
+    navigate(`/job-safety/edit-jsa?id=${jsa.id}`);
   };
 
   const handleDelete = () => {
@@ -66,7 +66,7 @@ const Dashboard = () => {
           <h1 className="text-3xl font-bold">JSA Dashboard</h1>
           <p className="text-muted-foreground">Job Safety Analysis Overview</p>
         </div>
-        <Button className="bg-primary hover:bg-primary/90" onClick={() => navigate("/create-jsa")}>
+        <Button className="bg-primary hover:bg-primary/90" onClick={() => navigate("/job-safety/create-jsa")}>
           <FileText className="mr-2 h-4 w-4" />
           Create New JSA
         </Button>

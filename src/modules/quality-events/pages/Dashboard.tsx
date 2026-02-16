@@ -81,7 +81,7 @@ export default function Dashboard() {
           trendValue="12% from last week"
           icon={<FileText className="h-5 w-5" />}
           variant="info"
-          onClick={() => navigate('/events')}
+          onClick={() => navigate('/quality-events/events')}
         />
         <KPICard
           title="Critical Events"
@@ -91,7 +91,7 @@ export default function Dashboard() {
           trendValue="No change"
           icon={<AlertTriangle className="h-5 w-5" />}
           variant="destructive"
-          onClick={() => navigate('/events?priority=critical')}
+          onClick={() => navigate('/quality-events/events?priority=critical')}
         />
         <KPICard
           title="Open Incidents"
@@ -101,7 +101,7 @@ export default function Dashboard() {
           trendValue="1 new this week"
           icon={<XCircle className="h-5 w-5" />}
           variant="warning"
-          onClick={() => navigate('/incidents')}
+          onClick={() => navigate('/quality-events/incidents')}
         />
         <KPICard
           title="SLA Breaches"
@@ -111,7 +111,7 @@ export default function Dashboard() {
           trendValue="Improved from 3"
           icon={<Clock className="h-5 w-5" />}
           variant="destructive"
-          onClick={() => navigate('/analytics/events')}
+          onClick={() => navigate('/quality-events/analytics/events')}
         />
       </div>
 
@@ -121,7 +121,7 @@ export default function Dashboard() {
           title="Pending Approvals"
           value={dashboardStats.pendingApprovals}
           icon={<Users className="h-5 w-5" />}
-          onClick={() => navigate('/qa-review')}
+          onClick={() => navigate('/quality-events/qa-review')}
         />
         <KPICard
           title="Completed This Month"
@@ -144,7 +144,7 @@ export default function Dashboard() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-lg font-semibold">Recent Quality Events</CardTitle>
-            <Button variant="ghost" size="sm" onClick={() => navigate('/events')} className="gap-1">
+            <Button variant="ghost" size="sm" onClick={() => navigate('/quality-events/events')} className="gap-1">
               View All
               <ArrowRight className="h-4 w-4" />
             </Button>
@@ -210,7 +210,7 @@ export default function Dashboard() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-lg font-semibold">Active Incidents</CardTitle>
-            <Button variant="ghost" size="sm" onClick={() => navigate('/incidents')} className="gap-1">
+            <Button variant="ghost" size="sm" onClick={() => navigate('/quality-events/incidents')} className="gap-1">
               View All
               <ArrowRight className="h-4 w-4" />
             </Button>

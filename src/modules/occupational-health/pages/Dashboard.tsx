@@ -80,13 +80,13 @@ export default function Dashboard() {
         </div>
         <div className="flex gap-2">
           <Button variant="outline" asChild>
-            <Link to="/reports">
+            <Link to="/occupational-health/reports">
               <Calendar className="h-4 w-4 mr-2" />
               View Reports
             </Link>
           </Button>
           <Button asChild>
-            <Link to="/exams">
+            <Link to="/occupational-health/exams">
               Schedule Exam
             </Link>
           </Button>
@@ -126,7 +126,7 @@ export default function Dashboard() {
               <CardDescription>Scheduled medical examinations</CardDescription>
             </div>
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/exams" className="flex items-center gap-1">
+              <Link to="/occupational-health/exams" className="flex items-center gap-1">
                 View All <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
@@ -171,7 +171,7 @@ export default function Dashboard() {
               <CardDescription>{waitingPatients} patients waiting</CardDescription>
             </div>
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/clinic" className="flex items-center gap-1">
+              <Link to="/occupational-health/clinic" className="flex items-center gap-1">
                 View All <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
@@ -217,7 +217,7 @@ export default function Dashboard() {
               <CardDescription>Active occupational illness investigations</CardDescription>
             </div>
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/illness" className="flex items-center gap-1">
+              <Link to="/occupational-health/illness" className="flex items-center gap-1">
                 View All <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>

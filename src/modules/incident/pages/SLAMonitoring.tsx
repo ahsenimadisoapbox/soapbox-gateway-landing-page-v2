@@ -189,7 +189,7 @@ export default function SLAMonitoring() {
                         <Button
                           variant="ghost"
                           size="sm"
-                          onClick={() => navigate(`/incidents/${incident.id}`)}
+                          onClick={() => navigate(`/incident/incidents/${incident.id}`)}
                           title="View Details"
                         >
                           <Eye className="h-4 w-4" />
@@ -197,7 +197,7 @@ export default function SLAMonitoring() {
                         <Button
                           variant="ghost"
                           size="sm"
-                          onClick={() => navigate(`/rca?incident=${incident.id}`)}
+                          onClick={() => navigate(`/incident/rca?incident=${incident.id}`)}
                           title="Root Cause Analysis"
                         >
                           <GitBranch className="h-4 w-4" />

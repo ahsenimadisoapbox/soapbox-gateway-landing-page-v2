@@ -51,7 +51,7 @@ export default function Dashboard() {
           <h1 className="text-3xl font-bold text-foreground">Incident Dashboard</h1>
           <p className="text-muted-foreground">Welcome back! Here's your incident overview</p>
         </div>
-        <Button onClick={() => navigate("/incidents/new")} className="bg-primary hover:bg-primary/90">
+        <Button onClick={() => navigate("/incident/incidents/new")} className="bg-primary hover:bg-primary/90">
           <Plus className="h-4 w-4 mr-2" />
           New Incident
         </Button>
@@ -215,7 +215,7 @@ export default function Dashboard() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        onClick={() => navigate(`/incidents/${incident.id}`)}
+                        onClick={() => navigate(`/incident/incidents/${incident.id}`)}
                       >
                         <Eye className="h-4 w-4" />
                       </Button>

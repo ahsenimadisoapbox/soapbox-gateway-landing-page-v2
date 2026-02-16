@@ -42,7 +42,7 @@ export default function Dashboard() {
           <p className="page-subtitle">Non-Compliance Reporting Overview</p>
         </div>
         <button
-          onClick={() => navigate('/create-ncr')}
+          onClick={() => navigate('/non-compliance/create-ncr')}
           className="action-button action-button-primary"
         >
           <Plus className="h-4 w-4" />
@@ -119,7 +119,7 @@ export default function Dashboard() {
         <h2 className="text-lg font-semibold text-foreground mb-4">Quick Actions</h2>
         <div className="grid gap-4 md:grid-cols-3">
           <button
-            onClick={() => navigate('/create-ncr')}
+            onClick={() => navigate('/non-compliance/create-ncr')}
             className="quick-action-card"
           >
             <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -133,7 +133,7 @@ export default function Dashboard() {
           </button>
 
           <button
-            onClick={() => navigate('/drafts')}
+            onClick={() => navigate('/non-compliance/drafts')}
             className="quick-action-card"
           >
             <div className="h-10 w-10 rounded-lg bg-warning/10 flex items-center justify-center">
@@ -147,7 +147,7 @@ export default function Dashboard() {
           </button>
 
           <button
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/non-compliance/register')}
             className="quick-action-card"
           >
             <div className="h-10 w-10 rounded-lg bg-info/10 flex items-center justify-center">
@@ -168,7 +168,7 @@ export default function Dashboard() {
           <div className="p-4 border-b border-border flex items-center justify-between">
             <h2 className="font-semibold text-foreground">Recent NCRs</h2>
             <button
-              onClick={() => navigate('/register')}
+              onClick={() => navigate('/non-compliance/register')}
               className="text-sm text-primary hover:underline"
             >
               View All

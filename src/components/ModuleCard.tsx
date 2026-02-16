@@ -45,7 +45,7 @@ const ModuleCard = ({
 
   const handleClick = () => {
     if (url && !comingSoon) {
-      window.open(url, "_blank", "noopener,noreferrer");
+      window.location.href = url;
     }
   };
 

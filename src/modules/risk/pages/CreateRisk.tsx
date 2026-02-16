@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useRisk } from "../context/RiskContext";
+import { useNavigate } from 'react-router-dom';
 import { Upload, X, AlertTriangle, Save, Send } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -20,7 +21,7 @@ import { Risk, User, RiskCategory, SeverityLevel } from '../types/risk';
 import { toast } from '../hooks/use-toast';
 
 export default function CreateRisk() {
-  const { currentUser } = useOutletContext<{ currentUser: User }>();
+  const { currentUser } = useRisk();
   const navigate = useNavigate();
   
   const [formData, setFormData] = useState({
@@ -132,7 +133,7 @@ export default function CreateRisk() {
           : `Risk ${risk.id} has been submitted for assessment.`,
       });
 
-      navigate('/risks');
+      navigate('/risk/risks');
     } catch (error) {
       toast({
         title: "Error",
@@ -343,7 +344,7 @@ export default function CreateRisk() {
               </Button>
               <Button 
                 variant="ghost" 
-                onClick={() => navigate('/risks')}
+                onClick={() => navigate('/risk/risks')}
                 className="w-full"
               >
                 Cancel

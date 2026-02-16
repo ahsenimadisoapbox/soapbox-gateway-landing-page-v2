@@ -255,7 +255,7 @@ const Reviews = () => {
                   <TableCell>{inspection.dueDate}</TableCell>
                   <TableCell className="text-right">
                     <Button size="sm" variant="outline" asChild>
-                      <a href={`/reviews/${inspection.id}`}>
+                      <a href={`/inspection/reviews/${inspection.id}`}>
                         <AlertCircle className="h-4 w-4 mr-2" />
                         Review
                       </a>

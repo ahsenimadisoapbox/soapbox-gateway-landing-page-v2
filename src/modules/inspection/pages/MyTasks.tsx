@@ -84,10 +84,10 @@ const MyTasks = () => {
                   </TableCell>
                   <TableCell className="text-right">
                     <div className="flex justify-end gap-1">
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/execute/${inspection.id}`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/execute/${inspection.id}`)}>
                         <Eye className="h-4 w-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/execute/${inspection.id}`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/execute/${inspection.id}`)}>
                         <Edit className="h-4 w-4" />
                       </Button>
                     </div>

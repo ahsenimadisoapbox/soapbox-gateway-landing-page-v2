@@ -14,7 +14,7 @@ const CreateSchedule = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Schedule created successfully!");
-    navigate("/schedules");
+    navigate("/inspection/schedules");
   };
 
   return (
@@ -133,7 +133,7 @@ const CreateSchedule = () => {
             </div>
 
             <div className="flex justify-end gap-2 pt-4">
-              <Button type="button" variant="outline" onClick={() => navigate("/schedules")}>
+              <Button type="button" variant="outline" onClick={() => navigate("/inspection/schedules")}>
                 Cancel
               </Button>
               <Button type="submit">Create Schedule</Button>

@@ -127,7 +127,7 @@ const Index = () => {
           <ExecutivePanel
             title="Enterprise Risk Landscape"
             icon={<Shield className="h-5 w-5" />}
-            action={{ label: 'View Risk Register', onClick: () => navigate('/risk') }}
+            action={{ label: 'View Risk Register', onClick: () => navigate('/executive/risk') }}
           >
             <div className="grid grid-cols-2 gap-6">
               <RiskHeatmap />
@@ -156,7 +156,7 @@ const Index = () => {
           <ExecutivePanel
             title="Compliance & Audit Assurance"
             icon={<ClipboardCheck className="h-5 w-5" />}
-            action={{ label: 'View Audits', onClick: () => navigate('/compliance') }}
+            action={{ label: 'View Audits', onClick: () => navigate('/executive/compliance') }}
           >
             <div className="grid grid-cols-2 gap-6">
               <div>
@@ -199,7 +199,7 @@ const Index = () => {
           <ExecutivePanel
             title="Safety & Incident Intelligence"
             icon={<AlertTriangle className="h-5 w-5" />}
-            action={{ label: 'View Analytics', onClick: () => navigate('/safety') }}
+            action={{ label: 'View Analytics', onClick: () => navigate('/executive/safety') }}
           >
             <div className="grid grid-cols-2 gap-6">
               <div>
@@ -251,7 +251,7 @@ const Index = () => {
           <ExecutivePanel
             title="CAPA & Corrective Effectiveness"
             icon={<FileCheck className="h-5 w-5" />}
-            action={{ label: 'View CAPA Dashboard', onClick: () => navigate('/capa') }}
+            action={{ label: 'View CAPA Dashboard', onClick: () => navigate('/executive/capa') }}
           >
             <div className="grid grid-cols-2 gap-6">
               <div>
@@ -337,7 +337,7 @@ const Index = () => {
             title="ESG & Sustainability"
             subtitle="Board-Ready"
             icon={<Leaf className="h-5 w-5" />}
-            action={{ label: 'View ESG Reports', onClick: () => navigate('/esg') }}
+            action={{ label: 'View ESG Reports', onClick: () => navigate('/executive/esg') }}
           >
             <div className="grid grid-cols-3 gap-4">
               <div className="space-y-3">
@@ -390,7 +390,7 @@ const Index = () => {
           <ExecutivePanel
             title="Executive Alerts & Decisions Queue"
             icon={<Bell className="h-5 w-5" />}
-            action={{ label: 'View All Alerts', onClick: () => navigate('/alerts') }}
+            action={{ label: 'View All Alerts', onClick: () => navigate('/executive/alerts') }}
           >
             <div className="space-y-3">
               {unacknowledgedAlerts.slice(0, 3).map((alert) => (
@@ -452,7 +452,7 @@ const Index = () => {
                 <Download className="h-4 w-4 mr-2" />
                 Export PPT
               </Button>
-              <Button className="bg-accent hover:bg-accent/90" size="sm" onClick={() => navigate('/board-packs')}>
+              <Button className="bg-accent hover:bg-accent/90" size="sm" onClick={() => navigate('/executive/board-packs')}>
                 Generate Board Pack
               </Button>
             </div>
@@ -464,7 +464,7 @@ const Index = () => {
       <div className="action-bar">
         <Button variant="outline" onClick={() => toast.success('All risks acknowledged')}>Acknowledge Risks</Button>
         <Button variant="outline" onClick={() => toast.success('Risk owner assignment initiated')}>Assign Owners</Button>
-        <Button className="bg-accent hover:bg-accent/90" onClick={() => navigate('/board-packs')}>
+        <Button className="bg-accent hover:bg-accent/90" onClick={() => navigate('/executive/board-packs')}>
           <Download className="h-4 w-4 mr-2" />
           Export Board Pack
         </Button>

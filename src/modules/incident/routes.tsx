@@ -1,5 +1,7 @@
 // src/modules/incident/routes.tsx
-import { Layout } from "./components/Layout";
+
+import { ModuleLayout } from "@/components/layout/ModuleLayout";
+import { incidentNavigation } from "./navigation";
 
 // Pages
 import Dashboard from "./pages/Dashboard";
@@ -20,9 +22,14 @@ import NotFound from "./pages/NotFound";
 
 const incidentRoutes = {
   path: "/incident",
-  element: <Layout />, // Layout + IncidentProvider (if any) + Outlet
+  element: (
+    <ModuleLayout
+      moduleName="Incident Management"
+      navigation={incidentNavigation}
+      className="p-8"
+    />
+  ),
   children: [
-    // Dashboard (default)
     { index: true, element: <Dashboard /> },
 
     // Incident Management
@@ -31,11 +38,11 @@ const incidentRoutes = {
     { path: "incidents/assignment", element: <Assignment /> },
     { path: "near-miss", element: <NearMiss /> },
 
-    // Monitoring & Notifications
+    // Monitoring
     { path: "sla-monitoring", element: <SLAMonitoring /> },
     { path: "notifications", element: <Notifications /> },
 
-    // Analysis & Reports
+    // Analysis
     { path: "rca", element: <RootCauseAnalysis /> },
     { path: "reports", element: <Reports /> },
     { path: "export", element: <SummaryExport /> },
@@ -48,7 +55,6 @@ const incidentRoutes = {
     // System
     { path: "settings", element: <Settings /> },
 
-    // Module-level 404
     { path: "*", element: <NotFound /> },
   ],
 };

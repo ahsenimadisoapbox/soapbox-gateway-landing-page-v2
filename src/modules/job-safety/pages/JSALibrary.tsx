@@ -49,7 +49,7 @@ const JSALibrary = () => {
 
   const handleUseTemplate = (jsa: JSATemplate) => {
     toast.success(`Creating new JSA from template: ${jsa.jobTitle}`);
-    navigate("/create-jsa");
+    navigate("/job-safety/create-jsa");
   };
 
   const handleDelete = (jsa: JSATemplate) => {
@@ -127,7 +127,7 @@ const JSALibrary = () => {
                       <Button variant="ghost" size="icon" onClick={() => handleExport(jsa)}>
                         <Download className="h-4 w-4" />
                       </Button>
-                      <Button variant="ghost" size="icon" onClick={() => navigate(`/edit-jsa?id=${jsa.jsaNumber}`)}>
+                      <Button variant="ghost" size="icon" onClick={() => navigate(`/job-safety/edit-jsa?id=${jsa.jsaNumber}`)}>
                         <Edit className="h-4 w-4" />
                       </Button>
                       <Button variant="ghost" size="icon" onClick={() => handleDelete(jsa)}>

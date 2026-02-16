@@ -75,7 +75,7 @@ export const Dashboard: React.FC = () => {
             <Button 
               variant="outline" 
               className="border-status-required text-status-required hover:bg-status-required/10"
-              onClick={() => navigate('/projects?filter=required')}
+              onClick={() => navigate('/validation/projects?filter=required')}
             >
               <AlertTriangle size={16} className="mr-2" />
               {systemsRequiringValidation} System{systemsRequiringValidation > 1 ? 's' : ''} Require Validation
@@ -84,7 +84,7 @@ export const Dashboard: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-accent hover:bg-accent/90"
-            onClick={() => navigate('/projects')}
+            onClick={() => navigate('/validation/projects')}
           >
             <FolderKanban size={16} className="mr-2" />
             New Project
@@ -118,7 +118,7 @@ export const Dashboard: React.FC = () => {
           <Card className="enterprise-card">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-lg font-semibold">Active Validation Projects</CardTitle>
-              <Button variant="ghost" size="sm" onClick={() => navigate('/projects')}>
+              <Button variant="ghost" size="sm" onClick={() => navigate('/validation/projects')}>
                 View all <ChevronRight size={16} className="ml-1" />
               </Button>
             </CardHeader>
@@ -197,7 +197,7 @@ export const Dashboard: React.FC = () => {
           <Card className="enterprise-card">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-lg font-semibold">Open Deviations</CardTitle>
-              <Button variant="ghost" size="sm" onClick={() => navigate('/deviations')}>
+              <Button variant="ghost" size="sm" onClick={() => navigate('/validation/deviations')}>
                 View all <ChevronRight size={16} className="ml-1" />
               </Button>
             </CardHeader>
@@ -242,15 +242,15 @@ export const Dashboard: React.FC = () => {
               <CardTitle className="text-lg font-semibold">Quick Actions</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/projects')}>
+              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/validation/projects')}>
                 <FolderKanban size={16} className="mr-2" />
                 Create Validation Project
               </Button>
-              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/inspector')}>
+              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/validation/inspector')}>
                 <Shield size={16} className="mr-2" />
                 Enter Inspector Mode
               </Button>
-              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/reports')}>
+              <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/validation/reports')}>
                 <FileText size={16} className="mr-2" />
                 Generate Report
               </Button>

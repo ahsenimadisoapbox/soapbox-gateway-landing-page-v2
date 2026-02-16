@@ -1,4 +1,8 @@
-import { MainLayout } from './components/layout/MainLayout';
+// modules/executive/routes.tsx
+
+import { ModuleLayout } from "@/components/layout/ModuleLayout";
+import { ExecutiveProvider, useExecutive } from "./store/ExecutiveContext";
+import { executiveNavigation } from "./navigation";
 
 import Index from "./pages/Index";
 import BoardViewPage from "./pages/BoardViewPage";
@@ -16,9 +20,44 @@ import SecurityPage from "./pages/SecurityPage";
 import HelpPage from "./pages/HelpPage";
 import NotFound from "./pages/NotFound";
 
+/* ============================================================
+   EXECUTIVE LAYOUT WRAPPER
+   This bridges ExecutiveContext → ModuleHeader
+============================================================ */
+
+const ExecutiveLayoutWrapper = () => {
+  const executive = useExecutive();
+
+  return (
+    <ModuleLayout
+      moduleName="Executive Console"
+      navigation={executiveNavigation}
+      headerProps={{
+        currentUser: executive.currentUser,
+        users: executive.users,
+        notifications: executive.notifications,
+        sidebarCollapsed: executive.sidebarCollapsed,
+        onToggleSidebar: executive.toggleSidebar,
+        onSwitchUser: executive.switchUser,
+        onMarkNotificationRead: executive.markNotificationRead,
+        onMarkAllNotificationsRead:
+          executive.markAllNotificationsRead,
+      }}
+    />
+  );
+};
+
+/* ============================================================
+   ROUTES
+============================================================ */
+
 const executiveRoutes = {
-  path: '/executive',
-  element: <MainLayout />,
+  path: "/executive",
+  element: (
+    <ExecutiveProvider>
+      <ExecutiveLayoutWrapper />
+    </ExecutiveProvider>
+  ),
   children: [
     { index: true, element: <Index /> },
     { path: "board-view", element: <BoardViewPage /> },

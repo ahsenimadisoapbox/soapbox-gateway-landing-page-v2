@@ -28,15 +28,15 @@ const Dashboard = () => {
           <p className="text-muted-foreground">Monitor and manage inspection activities</p>
         </div>
         <div className="flex gap-2">
-          <Button onClick={() => navigate("/execute")} className="gap-2">
+          <Button onClick={() => navigate("/inspection/execute")} className="gap-2">
             <Plus className="h-4 w-4" />
             Quick Inspection
           </Button>
-          <Button variant="outline" onClick={() => navigate("/schedules/create")}>
+          <Button variant="outline" onClick={() => navigate("/inspection/schedules/create")}>
             <Plus className="h-4 w-4 mr-2" />
             Plan Inspection
           </Button>
-          <Button variant="outline" onClick={() => navigate("/templates/create")}>
+          <Button variant="outline" onClick={() => navigate("/inspection/templates/create")}>
             <FileText className="h-4 w-4 mr-2" />
             Create Template
           </Button>
@@ -102,10 +102,10 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <div className="flex gap-1">
-                    <Button size="icon" variant="ghost" onClick={() => navigate(`/execute/${inspection.id}`)}>
+                    <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/execute/${inspection.id}`)}>
                       <Eye className="h-4 w-4" />
                     </Button>
-                    <Button size="icon" variant="ghost" onClick={() => navigate(`/execute/${inspection.id}`)}>
+                    <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/execute/${inspection.id}`)}>
                       <Edit className="h-4 w-4" />
                     </Button>
                   </div>
@@ -134,10 +134,10 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <div className="flex gap-1">
-                    <Button size="icon" variant="ghost" onClick={() => navigate(`/reviews/${inspection.id}`)}>
+                    <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/reviews/${inspection.id}`)}>
                       <Eye className="h-4 w-4" />
                     </Button>
-                    <Button size="icon" variant="ghost" onClick={() => navigate(`/reviews/${inspection.id}`)}>
+                    <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/reviews/${inspection.id}`)}>
                       <CheckCircle className="h-4 w-4" />
                     </Button>
                   </div>

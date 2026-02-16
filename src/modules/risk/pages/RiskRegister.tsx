@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { useOutletContext, Link } from 'react-router-dom';
+import { useRisk } from "../context/RiskContext";
 import { 
   Search, 
   Filter, 
@@ -45,9 +45,10 @@ import { useToast } from '../hooks/use-toast';
 import { getRisks, saveRisk } from '../lib/storage';
 import { mockUsers } from '../lib/mockData';
 import { Risk, User, RiskStatus, SeverityLevel } from '../types/risk';
+import { Link } from 'react-router-dom';
 
 export default function RiskRegister() {
-  const { currentUser } = useOutletContext<{ currentUser: User }>();
+  const { currentUser } = useRisk();
   const { toast } = useToast();
   const [risks, setRisks] = useState<Risk[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -184,7 +185,7 @@ export default function RiskRegister() {
             Export
           </Button>
           <Button asChild>
-            <Link to="/risks/new">
+            <Link to="/risk/risks/new">
               <Plus className="h-4 w-4 mr-2" />
               New Risk
             </Link>

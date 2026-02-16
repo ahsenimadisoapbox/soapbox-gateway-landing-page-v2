@@ -55,7 +55,7 @@ export default function DraftNCRList() {
           <h1 className="page-title">Draft NCR List</h1>
           <p className="page-subtitle">Manage your draft non-compliance reports</p>
         </div>
-        <button onClick={() => navigate('/create-ncr')} className="action-button action-button-primary">
+        <button onClick={() => navigate('/non-compliance/create-ncr')} className="action-button action-button-primary">
           <Plus className="h-4 w-4" />
           Create New NCR
         </button>

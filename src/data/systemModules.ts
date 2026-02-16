@@ -88,7 +88,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Training & Competency", description: "Track training and competency.", icon: GraduationCap, comingSoon: true },
         { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", icon: FileCheck, comingSoon: true },
         { title: "Nonconformance Management", description: "Handle deviations and NCRs.", icon: FileWarning, comingSoon: true },
-        { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "https://id-preview--05abec7d-6f9b-4d48-b83e-5d91a91118ea.lovable.app/", icon: AlertTriangle },
+        { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "/quality-events", icon: AlertTriangle },
         { title: "Audit & Inspection", description: "Quality audits and inspections.", icon: ClipboardCheck, comingSoon: true },
         { title: "Quality Risk Management", description: "Risk assessment for quality.", icon: Shield, comingSoon: true },
         { title: "Change Management", description: "Quality change control.", icon: RefreshCw, comingSoon: true },

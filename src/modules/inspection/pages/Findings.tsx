@@ -194,10 +194,10 @@ const Findings = () => {
                   </TableCell>
                   <TableCell className="text-right">
                     <div className="flex justify-end gap-1">
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/findings/${finding.id}/view`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/findings/${finding.id}/view`)}>
                         <Eye className="h-4 w-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" onClick={() => navigate(`/findings/${finding.id}/edit`)}>
+                      <Button size="icon" variant="ghost" onClick={() => navigate(`/inspection/findings/${finding.id}/edit`)}>
                         <Edit className="h-4 w-4" />
                       </Button>
                     </div>

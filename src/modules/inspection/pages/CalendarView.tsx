@@ -49,7 +49,7 @@ const CalendarView = () => {
         </div>
         <div className="flex gap-2">
           <Button variant="outline">Export .ics</Button>
-          <Button onClick={() => navigate("/schedules/create")}>Schedule Inspection</Button>
+          <Button onClick={() => navigate("/inspection/schedules/create")}>Schedule Inspection</Button>
         </div>
       </div>
 

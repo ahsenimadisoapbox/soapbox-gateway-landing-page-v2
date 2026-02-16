@@ -75,7 +75,7 @@ export function Dashboard() {
             <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
             <p className="text-muted-foreground">Management Review governance overview</p>
           </div>
-          <Button onClick={() => navigate('/reviews')} className="gap-2">
+          <Button onClick={() => navigate('/review/reviews')} className="gap-2">
             <ClipboardCheck className="h-4 w-4" />
             New Review
           </Button>
@@ -252,7 +252,7 @@ export function Dashboard() {
                 <div className="text-right">
                   <div className="text-2xl font-bold text-primary">{mockReviews[0].progress}%</div>
                   <p className="text-xs text-muted-foreground">Progress</p>
-                  <Button size="sm" className="mt-2 gap-1" onClick={() => navigate('/reviews')}>
+                  <Button size="sm" className="mt-2 gap-1" onClick={() => navigate('/review/reviews')}>
                     Continue <ArrowRight className="h-3 w-3" />
                   </Button>
                 </div>
@@ -268,7 +268,7 @@ export function Dashboard() {
                   <ListTodo className="h-4 w-4" />
                   Recent Actions
                 </CardTitle>
-                <Button variant="ghost" size="sm" onClick={() => navigate('/actions')}>
+                <Button variant="ghost" size="sm" onClick={() => navigate('/review/actions')}>
                   View all
                 </Button>
               </div>

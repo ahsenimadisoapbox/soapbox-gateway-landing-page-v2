@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import { useRisk } from "../context/RiskContext";
 import { AlertTriangle, TrendingUp, Users, Clock, CheckCircle2, XCircle } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -10,7 +10,7 @@ import { mockUsers, mockRisks } from '../lib/mockData';
 import { Risk, User } from '../types/risk';
 
 export default function Dashboard() {
-  const { currentUser } = useOutletContext<{ currentUser: User }>();
+  const { currentUser } = useRisk();
   const [risks, setRisks] = useState<Risk[]>([]);
   const [loading, setLoading] = useState(true);
 

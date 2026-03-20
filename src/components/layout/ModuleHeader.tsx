@@ -10,9 +10,9 @@ import {
   Settings,
   LogOut,
   Check,
-  Home, // added for homepage link
+  Home,
 } from "lucide-react";
-import { Link } from "react-router-dom"; // added for navigation to dashboard
+import { Link } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,10 +29,6 @@ import {
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { ScrollArea } from "../ui/scroll-area";
-
-/* ============================================================
-   TYPES
-============================================================ */
 
 export interface ModuleUser {
   id: string;
@@ -69,10 +65,6 @@ interface ModuleHeaderProps {
   onToggleSidebar?: () => void;
 }
 
-/* ============================================================
-   COMPONENT
-============================================================ */
-
 export const ModuleHeader: React.FC<ModuleHeaderProps> = ({
   className,
   currentUser,
@@ -81,6 +73,8 @@ export const ModuleHeader: React.FC<ModuleHeaderProps> = ({
   onSwitchUser,
   onMarkNotificationRead,
   onMarkAllNotificationsRead,
+  sidebarCollapsed,
+  onToggleSidebar,
 }) => {
   const unreadCount = notifications.filter((n) => !n.read).length;
 
@@ -120,6 +114,17 @@ export const ModuleHeader: React.FC<ModuleHeaderProps> = ({
     >
       {/* ================= LEFT SECTION ================= */}
       <div className="flex items-center gap-3">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={onToggleSidebar}
+        >
+          {sidebarCollapsed ? (
+            <PanelLeft className="h-5 w-5" />
+          ) : (
+            <PanelLeftClose className="h-5 w-5" />
+          )}
+        </Button>
         <img src={logo} alt="SoapBox.Cloud" className="h-9" />
       </div>
 
@@ -132,7 +137,7 @@ export const ModuleHeader: React.FC<ModuleHeaderProps> = ({
             <Home className="h-5 w-5" />
           </Button>
         </Link>
-        
+
 
         {/* ================= NOTIFICATIONS ================= */}
         <Popover>

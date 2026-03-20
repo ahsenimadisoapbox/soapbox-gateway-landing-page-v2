@@ -22,18 +22,25 @@ interface ModuleSidebarProps {
   className?: string;
 }
 
+interface ModuleSidebarProps {
+  moduleName: string;
+  navigation: NavSection[];
+  className?: string;
+  collapsed?: boolean;
+}
+
 export const ModuleSidebar: React.FC<ModuleSidebarProps> = ({
   moduleName,
   navigation,
   className,
+  collapsed = false,
 }) => {
-  const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
   return (
     <aside
       className={cn(
-        "h-screen bg-sidebar flex flex-col transition-all duration-300 sticky top-0 z-40",
+        "h-screen bg-[#1e63ac] flex flex-col transition-all duration-300 sticky top-0 z-40",
         collapsed ? "w-16" : "w-64",
         className
       )}
@@ -70,8 +77,8 @@ export const ModuleSidebar: React.FC<ModuleSidebarProps> = ({
                       <NavLink
                         to={item.path}
                         className={cn(
-                          "nav-item group",
-                          isActive && "nav-item-active bg-sidebar-accent",
+                          "nav-item group hover:bg-[#4181C5]",
+                          isActive && "bg-[#4181C5]",
                           collapsed && "justify-center px-2"
                         )}
                         title={collapsed ? item.label : undefined}
@@ -108,7 +115,7 @@ export const ModuleSidebar: React.FC<ModuleSidebarProps> = ({
       </ScrollArea>
 
       {/* Footer */}
-      <div className="p-4 border-t border-sidebar-border mt-auto">
+      {/* <div className="p-4 border-t border-sidebar-border mt-auto">
         {!collapsed && (
           <>
             <p className="text-xs text-sidebar-muted text-center">
@@ -119,20 +126,7 @@ export const ModuleSidebar: React.FC<ModuleSidebarProps> = ({
             </p>
           </>
         )}
-
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setCollapsed(!collapsed)}
-          className="w-full mt-2 text-sidebar-muted hover:text-sidebar-foreground hover:bg-sidebar-accent"
-        >
-          {collapsed ? (
-            <PanelLeft className="h-5 w-5" />
-          ) : (
-            <PanelLeftClose className="h-5 w-5" />
-          )}
-        </Button>
-      </div>
+      </div> */}
     </aside>
   );
 };
